@@ -6,12 +6,13 @@ def burbuja(lista):
                 lista[j], lista[j+1] = lista[j+1], lista[j]
     return lista
 
+#Pedimos al usuario la lista de N numeros
 n = int(input("Cuantos numeros desea ingresar?: "))
 numeros = []
 
 #Generemos un espacio antes de los numeros que de el usuario
 print("")
-#Construimos la lista
+#Construimos la lista con los numeros ingresado
 for i in range(n):
     num = float(input(f"Ingrese el numero {i+1}: "))
     numeros.append(num)
